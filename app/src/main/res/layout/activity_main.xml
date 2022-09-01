@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo_bank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic__poo_bank" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/text_email"
+                style="@style/EditText_form"
+                android:drawableStart="@drawable/custom_email_icon"
+                android:hint="@string/hint_email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/text_password"
+                style="@style/EditText_form"
+                android:drawableStart="@drawable/custom_password_icon"
+                android:hint="@string/hint_password"
+                android:inputType="textPassword"
+                android:maxLength="8" />
+
+            <Button
+                android:id="@+id/btn_enter"
+                style="@style/Button_form"
+                android:text="@string/btn_enter"
+                app:backgroundTint="@color/secondary" />
+
+            <Button
+                android:id="@+id/btn_open_account"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="40dp"
+                android:text="@string/btn_openAccount"
+                android:textColor="@color/secondary"
+                app:backgroundTint="@color/back" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

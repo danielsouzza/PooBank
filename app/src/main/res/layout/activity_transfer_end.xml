@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backHome"
+    android:orientation="vertical"
+    tools:context=".TransferEndActivity">
+
+    <TextView
+        style="@style/Title_Screen"
+        android:text="@string/trf_confirmation" />
+
+    <LinearLayout
+        android:id="@+id/value_view"
+        style="@style/EditText_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextView_form"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:text="@string/trf_value" />
+
+        <TextView
+            android:id="@+id/trf_value"
+            style="@style/TextView_form"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="@string/text_balance"
+            android:textAlignment="center"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            tools:text="R$50,00" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/to"
+        style="@style/TextView_form"
+        android:paddingStart="2dp"
+        android:text="@string/trf_to" />
+
+
+    <LinearLayout
+        style="@style/EditText_form"
+        android:paddingStart="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_trf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:itemCount="3"
+            tools:listitem="@layout/transfer_item" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_transfer_finish"
+        style="@style/Button_form"
+        android:layout_marginTop="100dp"
+        android:text="@string/btn_confirmation"
+        android:textStyle="bold"
+        app:backgroundTint="@color/secondary" />
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    android:orientation="vertical"
+    tools:context=".RegisterClientActivity">
+
+    <TextView
+        style="@style/Title_Screen"
+        android:text="@string/title_registration_screen_1" />
+
+    <TextView
+        style="@style/TextView_form"
+        android:layout_marginTop="30dp"
+        android:text="@string/info_registration_screen_1"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/text_cpf"
+        style="@style/TextView_form"
+        android:layout_marginTop="20dp"
+        android:text="@string/text_cpf" />
+
+    <EditText
+        android:id="@+id/edit_cpf"
+        style="@style/EditText_form"
+        android:hint="@string/hint_cpf"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/text_name"
+        style="@style/TextView_form"
+        android:text="@string/text_name" />
+
+    <EditText
+        android:id="@+id/edit_name"
+        style="@style/EditText_form"
+        android:hint="@string/hint_name"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/text_birth"
+        style="@style/TextView_form"
+        android:text="@string/text_birth_date" />
+
+    <EditText
+        android:id="@+id/edit_birth"
+        style="@style/EditText_form"
+        android:hint="@string/hint_birth"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/text_phone"
+        style="@style/TextView_form"
+        android:text="@string/text_phone" />
+
+    <EditText
+        android:id="@+id/edit_phone"
+        style="@style/EditText_form"
+        android:hint="@string/hint_phone"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/btn_continue"
+        style="@style/Button_form"
+        android:layout_marginTop="80dp"
+        android:text="@string/btn_continue"
+        app:backgroundTint="@color/secondary" />
+
+</LinearLayout>

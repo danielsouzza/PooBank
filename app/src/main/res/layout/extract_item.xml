@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/view_main"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_extractType_item"
+            style="@style/TextView_form"
+            tools:text="@string/transfer"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/text_extractValue_item"
+            style="@style/TextView_form"
+            android:textSize="18sp"
+            tools:text="R$ 50,00" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_date_extract_item"
+        style="@style/TextView_form"
+        android:layout_width="200dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:text="20/04/2022" />
+
+
+</LinearLayout>

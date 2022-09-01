@@ -1,0 +1,111 @@
+<resources>
+
+    <!--related to screen login-->
+    <string name="app_name">POO Bank</string>
+    <string name="text_email">E-mail</string>
+    <string name="hint_email">Insira seu e-mail</string>
+    <string name="text_password">Senha</string>
+    <string name="hint_password">Insira uma senha</string>
+    <string name="btn_openAccount">Abrir conta</string>
+    <string name="btn_enter">Entrar</string>
+
+    <!--related to registration screen 1-->
+    <string name="title_registration_screen_1">Seus dados</string>
+    <string name="info_registration_screen_1">Insira seus dados para a criação de um acadastro básico.</string>
+    <string name="text_cpf">CPF</string>
+    <string name="hint_cpf">Apenas números</string>
+    <string name="text_name">Nome</string>
+    <string name="hint_name">Insira seu nome completo</string>
+    <string name="text_birth_date">Data de nascimento</string>
+    <string name="hint_birth">DD/MM/AAAA</string>
+    <string name="text_phone">Celular</string>
+    <string name="hint_phone">(99) 99999–9999</string>
+    <string name="btn_continue">Continuar</string>
+
+    <!--related to registration screen 1-->
+    <string name="title_registration_screen_2">Criar Login</string>
+    <string name="info_registration_screen_2">E pra fechar, seu e-mail e senha! Crie uma senha forte e fácil de memorizar. Ela deve ter entre 6 e 8 caracteres, com letras e números.</string>
+    <string name="text_password_check">Confirmar senha</string>
+    <string name="hint_password_check">Insira a senha novamente</string>
+    <string name="btn_finish_registration">Criar conta</string>
+
+    <!--related to Home App-->
+    <string name="name_current_user"> %1$s</string>
+    <string name="title_balance">Saldo em conta</string>
+    <string name="text_balance">R$ %1$s</string>
+    <string name="btn_extract">Ver detalhes</string>
+
+    <!--related to functions of home App-->
+    <string name="transfer_pix">Pix</string>
+    <string name="recharge">Recarga Celular</string>
+    <string name="transfer">Transferir</string>
+    <string name="payments">Pagar</string>
+    <string name="deposit">Despósitar</string>
+    <string name="card">Cartão</string>
+
+    <!--related to incorrect data-->
+    <string name="fields_input">Dados não estão corretos</string>
+    <string name="fields_account">Conta destino não encontrada</string>
+    <string name="fields_account_already_exists">Email já corresponde a uma conta</string>
+    <string name="fields_password">Senha incorreta</string>
+    <string name="fields_login">Email ou senha incorreta</string>
+    <string name="fields_empty">Compo obrigatório vazio</string>
+    <string name="fields_keyNotFound">Chave pix não corresponde a nenhuma conta. </string>
+
+    <!--related to Transfer (trf)-->
+    <string name="type_account">Tipo de conta</string>
+    <string name="number_account">Número da conta</string>
+    <string name="input_value">Informe o valor da transferência</string>
+    <string name="trf_confirmation">Confirmação</string>
+    <string name="trf_value">Valor da transferência</string>
+    <string name="btn_confirmation">Confirmar Transferência</string>
+
+    <!--related to recycle view trf-->
+    <string name="trf_to">Para:</string>
+    <string name="trf_destination">%1$s</string>
+    <string name="trf_cpf">%1$s</string>
+    <string name="trf_inst">Instituição</string>
+    <string name="trf_account">%1$s</string>
+    <string name="trf_account_number">%1$d</string>
+    <string name="trf_when">Quando</string>
+    <string name="trf_date">%1$s</string>
+    <string name="hint_number_account">0000-0</string>
+    <string name="btn_confirm">Confirmar</string>
+
+    <!--related to final transaction screen-->
+    <string name="transaction_success">Transação realizada com sucesso!</string>
+    <string name="transaction_fail">Ocorreu um erro na transação</string>
+
+    <!--related to transfer pix-->
+    <string name="trf_title_pix">Transferência via Pix</string>
+    <string name="keys_already_exists">Chave Pix já existe</string>
+    <string name="btn_new_key">Cadastra um nova chave</string>
+    <string name="hint_input_key_pix">Cpf, Email, phone ou Aleatória</string>
+    <string name="my_keys">Minhas chaves</string>
+    <string name="text_random">Aleatória</string>
+    <string name="new_key">Nova chave</string>
+    <string name="key_random">%1$s</string>
+
+    <!--related to transfer pix-->
+    <string name="title_extract">Extrato</string>
+
+    <!--related to deposit-->
+    <string name="text_input_deposit_value">Valor do depósito</string>
+    <string name="btn_deposit">Confirmar depósito</string>
+
+    <!-- Options spinner type account-->
+    <string-array name="type_account">
+        <item>Conta corrente</item>
+        <item>Conta poupança</item>
+        <item>Conta especial</item>
+    </string-array>
+
+    <!-- Options spinner type key -->
+    <string-array name="type_key">
+        <item>@string/text_email</item>
+        <item>@string/text_cpf</item>
+        <item>@string/text_phone</item>
+        <item>@string/text_random</item>
+    </string-array>
+
+</resources>

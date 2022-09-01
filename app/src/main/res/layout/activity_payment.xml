@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backHome"
+    android:orientation="vertical"
+    tools:context=".PaymentActivity">
+
+    <TextView
+        style="@style/Title_Screen"
+        android:text="@string/trf_title_pix" />
+
+    <EditText
+        android:id="@+id/input_keyPix"
+        style="@style/EditText_form"
+        android:maxLength="50"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="40dp"
+        android:hint="@string/hint_input_key_pix"
+        android:textSize="18sp" />
+
+    <TextView
+        style="@style/TextView_form"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:text="@string/trf_value"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/input_valuePix"
+        style="@style/EditText_form"
+        android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/custom_real_icon"
+        android:inputType="number" />
+
+
+    <Button
+        android:id="@+id/btn_continue"
+        style="@style/Button_form"
+        android:text="@string/btn_continue"
+        app:backgroundTint="@color/secondary" />
+
+
+    <Button
+        android:id="@+id/btn_my_key"
+        style="@style/Button_form"
+        android:layout_height="70dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="250dp"
+        android:text="@string/my_keys"
+        app:backgroundTint="@color/primary" />
+
+</LinearLayout>

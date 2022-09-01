@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backHome"
+    android:orientation="vertical"
+    tools:context=".TransferStartActivity">
+
+    <TextView
+        style="@style/Title_Screen"
+        android:text="@string/transfer" />
+
+    <LinearLayout
+        style="@style/EditText_form"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/transfer_text_2"
+            style="@style/TextView_form"
+            android:layout_marginHorizontal="0dp"
+            android:layout_weight="1"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/title_balance"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/trf_text_balance"
+            style="@style/TextView_form"
+            android:layout_marginHorizontal="0dp"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+            android:paddingEnd="20dp"
+            android:text="@string/text_balance"
+            android:textAlignment="viewEnd"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:text="R$ 50,00" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/transfer_text_3"
+        style="@style/TextView_form"
+        android:layout_marginTop="20dp"
+        android:text="@string/type_account" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/style_spinner"
+        android:dropDownVerticalOffset="50dp"
+        android:popupBackground="@color/primary"
+        tools:listitem="@layout/spinner_item" />
+
+    <TextView
+        android:id="@+id/transfer_text_4"
+        style="@style/TextView_form"
+        android:layout_marginTop="20dp"
+        android:text="@string/number_account" />
+
+    <EditText
+        android:id="@+id/account_number"
+        style="@style/EditText_form"
+        android:hint="@string/hint_number_account"
+        android:inputType="number"
+        android:maxLength="5"
+        android:paddingStart="20dp" />
+
+    <TextView
+        android:id="@+id/transfer_text_5"
+        style="@style/TextView_form"
+        android:layout_marginTop="20dp"
+        android:text="@string/trf_value"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/input_value"
+        style="@style/EditText_form"
+        android:layout_height="50dp"
+        android:drawableStart="@drawable/custom_real_icon"
+        android:inputType="number"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        tools:text="50" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_transfer_next"
+                style="@style/Button_form"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/custom_button"
+                android:text="@string/btn_continue"
+                app:backgroundTint="@color/secondary" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

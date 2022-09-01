@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backHome"
+    android:orientation="vertical"
+    tools:context=".ManageKeysPixActivity">
+
+
+    <TextView
+        style="@style/Title_Screen"
+        android:text="@string/my_keys" />
+
+    <Button
+        android:id="@+id/btn_new_key"
+        style="@style/TextView_form"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/view_main"
+        android:drawableEnd="@drawable/ic_chevron_right"
+        android:drawablePadding="10dp"
+        android:paddingStart="10dp"
+        android:text="@string/btn_new_key"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/primary" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_keys_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        tools:itemCount="4"
+        tools:listitem="@layout/key_pix_item" />
+
+
+</LinearLayout>
